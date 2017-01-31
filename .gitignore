@@ -8,3 +8,4 @@ coverage/
 build/
 *.sw*
 *.un~
+dist

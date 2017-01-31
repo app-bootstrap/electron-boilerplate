@@ -15,7 +15,9 @@ gulp.task('js', function() {
     bundleExternal: false
   })
   .transform(stringify(['.html']))
-  .transform(babelify.configure({ extensions: ['.js', '.jsx', '.ts', '.tsx'] }))
+  .transform(babelify.configure({
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  }))
   .add('./lib/assets/index.js')
   .bundle()
   .pipe(source('./index.js'))
