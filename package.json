@@ -2,9 +2,10 @@
   "name": "electron-boilerplate",
   "version": "1.0.0",
   "description": "Scaffold out an Electron application",
-  "main": "main.js",
+  "main": "./lib/launch.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "lint:js": "eslint ./lib"
   },
   "repository": "https://github.com/xudafeng/electron-boilerplate",
   "keywords": [
@@ -13,6 +14,9 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "eslint": "^2.7.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.3.0"
   }
 }
