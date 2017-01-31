@@ -5,7 +5,8 @@
   "main": "./lib/launch.js",
   "scripts": {
     "start": "electron .",
-    "lint:js": "eslint ./lib"
+    "lint:js": "eslint ./lib",
+    "build:osx": "electron-packager ./ 'electron-boilerplate' --app-version=1.0.0 --out=./build --ignore=./build --platform=darwin --arch=x64 --icon=assets/osx/icon.icns --overwrite --prune"
   },
   "repository": "https://github.com/xudafeng/electron-boilerplate",
   "keywords": [
@@ -14,7 +15,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.4.1",
+    "electron-packager": "^5.2.1",
+    "electron-prebuilt": "^1.4.13",
     "eslint": "^2.7.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.3.0"
