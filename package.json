@@ -4,6 +4,7 @@
   "description": "Scaffold out an Electron application",
   "main": "./lib/launch.js",
   "scripts": {
+    "dev": "APP_ENV=dev electron .",
     "start": "electron .",
     "lint:js": "eslint ./lib",
     "build:osx": "electron-packager ./ 'electron-boilerplate' --app-version=1.0.0 --out=./build --ignore=./build --platform=darwin --arch=x64 --icon=assets/osx/icon.icns --overwrite --prune"
